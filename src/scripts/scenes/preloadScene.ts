@@ -35,9 +35,14 @@ export default class PreloadScene extends Phaser.Scene {
     // 背景音乐
     this.load.audio('overworld', 'assets/music/overworld.mp3')
     // 游戏特效音乐
-    this.load.audioSprite('sfx', 'assets/audio/sfx.json', ['assets/audio/sfx.ogg', 'assets/audio/sfx.mp3'], {
-      instances: 4,
-    })
+    this.load.audioSprite(
+      'sfx',
+      'assets/audio/sfx.json',
+      ['assets/audio/sfx.ogg', 'assets/audio/sfx.mp3', 'assets/audio/gameover.mp3'],
+      {
+        instances: 4,
+      }
+    )
   }
 
   create() {

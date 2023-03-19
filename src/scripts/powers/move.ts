@@ -33,10 +33,10 @@ export class Move implements Power {
     const animSuffix = player.animSuffix
 
     // 移动
-    if (cursors.left.isDown) {
+    if (cursors.right.isDown) {
       player.setFlipX(true)
       player.body.setAccelerationX(-ax - (velocity.x > 0 ? velocity.x * 2 : 0))
-    } else if (cursors.right.isDown) {
+    } else if (cursors.left.isDown) {
       player.setFlipX(false)
       player.body.setAccelerationX(ax + (velocity.x < 0 ? -velocity.x * 2 : 0))
     } else {

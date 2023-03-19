@@ -115,6 +115,11 @@
       "start": 57,
       "end": 63.26412698412698,
       "loop": false
+    },
+    "gameover": {
+      "start": 0,
+      "end": 1,
+      "loop": false
     }
   }
 }
